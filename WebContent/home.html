@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+			#header{
+				border-bottom: 3px solid black;
+				margin-bottom: 15px
+			}
+			#content{
+				display: flex;
+				border: 3px solid black;
+				/* flex-direction: row 가 디폴트이다.*/
+			}
+			#sideBar{
+				width: 300px;
+				background-color: gray;
+				padding-right: 15px;
+				border-right: 3px solid black;
+			}
+			#center{
+				flex-grow: 1;
+				/* 남아있는 공간을 모두 차지함*/
+			}
+			#footer{
+				border-top: 3px solid black;
+				margin-top: 15px
+			}
+		</style>
+		
+</head>
+<body>
+
+	<div id = "wrapper">
+		<div id = "header">
+			<h3>JavaScript Programming</h3>
+		</div>
+		<div id = "content">
+			<div id = "sideBar">
+				<ul>
+					<li>01 01_javascript_tag.html</li>
+					<li>02 02_javascript_tag.html</li>
+					<li>03 03_javascript_tag.html</li>
+					<li>04 04_javascript_tag.html</li>					
+				</ul>				
+			</div>
+			<div id = "center"></div>
+		</div>
+		<div id = "footer">2019. Iot. JSH</div>
+	</div>
+	<button onclick="location.href = './html/HW01_Main.html'">TO HW</button>
+</body>
+</html>
